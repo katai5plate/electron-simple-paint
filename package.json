@@ -6,5 +6,8 @@
   "dependencies": {
     "electron": "^3.0.8",
     "electron-reload": "^1.2.5"
+  },
+  "scripts": {
+    "start": "electron main"
   }
 }
