@@ -5,10 +5,14 @@
   <title>example</title>
 </head>
 
-<body>
+<body style="background-color:cadetblue">
   <div class="paint">
     <button id="cls">clear</button>
-    <canvas id="draw" width="480" height="360"/>
+    <button id="load">load image</button>
+    <button id="save">save png</button>
+    <p>L drag: pen / R drag: eraser</p>
+    <hr />
+    <canvas id="draw" width="0" height="0" style="border: solid white" />
   </div>
   <script>
     require("./paint.js")
