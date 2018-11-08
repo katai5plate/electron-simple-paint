@@ -1,3 +1,4 @@
+// const developMode = process.env.NODE_ENV === "dev";
 const clsButton = document.getElementById("cls");
 const loadButton = document.getElementById("load");
 const saveButton = document.getElementById("save");
