@@ -15,7 +15,9 @@ const {
 
 let mousex, mousey, pmousex, pmousey, mousel, mousem, mouser;
 
-[canvas.width, canvas.height] = [320, 240]
+const resetCanvas = () => [canvas.width, canvas.height] = [320, 240];
+
+resetCanvas();
 
 canvas.addEventListener("mousemove", e => {
     const rect = e.target.getBoundingClientRect();
@@ -23,7 +25,7 @@ canvas.addEventListener("mousemove", e => {
     mousex = e.clientX - rect.left, mousey = e.clientY - rect.top;
     if (mousel) {
         context.globalCompositeOperation = "source-over";
-    }else if (mouser) {
+    } else if (mouser) {
         context.globalCompositeOperation = "destination-out";
     }
     if (mousel || mouser) {
@@ -45,6 +47,7 @@ canvas.addEventListener("mouseup", e => {
     if (e.which === 3) mouser = false;
 });
 clsButton.addEventListener("click", e => {
+    resetCanvas();
     context.clearRect(0, 0, canvas.width, canvas.height)
 })
 loadButton.addEventListener("click", e => {
