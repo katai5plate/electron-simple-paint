@@ -9,11 +9,7 @@ yarn install
 ```
 yarn start
 ```
-## Development Build
-```
-yarn build:dev
-```
-## Prodution Build
+## Windows Build
 ```
 yarn build
 ```
